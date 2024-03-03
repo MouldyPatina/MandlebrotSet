@@ -3,25 +3,12 @@ package main
 import (
 	"fmt"
 	"math"
-	"os"
 	"strconv"
 )
 
 func main () {
 	picture := Picture(195, 70);
-	f, err := os.Create("picture.txt");
-	if err != nil {
-		fmt.Println(err);
-		return;
-	}
-	defer f.Close();
-
-	l , err := f.WriteString(picture);
-	if err != nil {
-		fmt.Println(err);
-		return;
-	}
-	fmt.Println(l, "Written successfully");
+	fmt.Println(picture);
 }
 
 func Picture(widthSteps int, heightSteps int) string {
