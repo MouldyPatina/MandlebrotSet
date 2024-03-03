@@ -21,4 +21,4 @@
 go.work
 
 # Created image
-picture.txt
+*.txt
