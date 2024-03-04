@@ -22,3 +22,4 @@ go.work
 
 # Created image
 *.txt
+*.png
